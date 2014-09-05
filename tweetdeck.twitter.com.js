@@ -1,5 +1,4 @@
-var documentReady = function() {
-	console.log("dotjs started");
+var cashmereCSS = function() {
 	/* type is either "light" or "dark" */
 	var type = "light";
 	var style = "";
@@ -10,6 +9,12 @@ var documentReady = function() {
 	}).error(function () {
 		alert("something went very, very wrong");
 	});
+}
+
+var documentReady = function() {
+	console.log("dotjs started");
+
+	cashmereCSS();
 }
 
 $(document).ready(documentReady)
