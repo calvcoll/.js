@@ -5,6 +5,7 @@ var cashmereCSS = function() {
 	$.get("https://github.com/pixeldesu/cashmere/releases/download/v1.1.0/cashmere-" + type + ".css", function (data) {
 		style = data;
 	}).done(function () {
+		style = style.replace('http://puu.sh/94OvX.png', '');
 		styletag = $(document).add("style").html(style);
 	}).error(function () {
 		alert("something went very, very wrong");
