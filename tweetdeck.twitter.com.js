@@ -2,7 +2,7 @@ var cashmereCSS = function() {
 	/* type is either "light" or "dark" */
 	var type = "light";
 	var style = "";
-	$.get("https://github.com/pixeldesu/cashmere/releases/download/v1.1.0/cashmere-" + type + ".css", function (data) {
+	$.get("//github.com/pixeldesu/cashmere/releases/download/v1.1.0/cashmere-" + type + ".css", function (data) {
 		style = data;
 	}).done(function () {
 		style = style.replace('http://puu.sh/94OvX.png', '');
